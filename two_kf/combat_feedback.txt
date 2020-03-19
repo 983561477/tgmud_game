@@ -1,0 +1,20 @@
+﻿// 位置：战斗函数
+
+// -----------------分隔符------------------
+
+// 关键字：combat_feedback
+// 参数：type, other_ident
+// 描述：战斗反馈
+// 值：见下方
+
+// -----------------分隔符------------------
+
+// combat_feedback == -1 退出战斗
+// combat_feedback == 0  处于战斗中
+// combat_feedback == 1  新开始的战斗
+// combat_feedback == 2  中途加入了别人的战斗
+// combat_feedback == -2  别人中途加入了战斗
+// combat_feedback == 3  战斗人数已满
+
+// 给对手发送战斗反馈
+SystemCMD.send("{\"combat_feedback\":\""+type+"\"}", other_ident);

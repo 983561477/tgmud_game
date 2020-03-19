@@ -1,0 +1,103 @@
+玩家年龄描述   
+// gender              性别
+
+// A721ca76043   年龄
+
+// A180935998     战力
+	
+	var c;
+		
+if(gender == 1) {
+			
+c = "他";
+		
+}
+		
+else if(gender == 0) {
+	
+		c = "她";
+		
+}
+		
+if (A721ca76043 < 20) {
+
+			c  += "大约十多岁。";
+		
+}
+		
+else if (A721ca76043 >= 20 && A721ca76043 < 30) {
+
+			c  += "大约二十多岁。";
+		
+}
+		
+else if (A721ca76043 >= 30 && A721ca76043 < 40) {
+
+			c  += "大约三十多岁。";
+		
+}
+		
+else if (A721ca76043 >= 40 && A721ca76043 < 50) {
+
+			c  += "大约四十多岁。";
+		
+}
+		
+else if (A721ca76043 >= 50 && A721ca76043 < 60) {
+
+			c  += "大约五十多岁。";
+		
+}
+		
+else if (A721ca76043 >= 60 && A721ca76043 < 70) {
+
+			c  += "大约六十多岁。";
+		
+}
+		
+else {
+
+			c  += "年龄很大。";
+		
+}
+                
+if (A180935998 == 5) {
+
+                        c += "一个战力只有5的渣渣！";
+                
+}
+
+return c;
+
+
+修改物品数量
+mg.updateGoodsQuantity(goods);
+
+
+穿上/脱下装备
+var k="A884f9f7bc15",v=A884f9f7bc15;
+
+if(v==1) {
+  v=0;
+}
+else {
+  v=1;
+}
+goods.updateAttr(goods,k,v);
+
+修改玩家当前血量
+var max=A1562931695,now=A884f9f7bc19;
+var h=now+value;
+if(h>max) {
+  h=max;
+}
+
+mg.updatePlayerAttr(player,"A884f9f7bc19",h);
+
+长剑
+$call[A884f9f7bc17(goods,id,attr,A884f9f7bc15)]
+
+
+草药
+$call[A884f9f7bc18(player,A1562931695,A884f9f7bc19,value)]
+$call[A884f9f7bc16(goods)]
